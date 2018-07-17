@@ -9,13 +9,15 @@ import {
   BrowserRouter as Router,
   Route,
   Link,
-  Switch
+  Switch,
 } from 'react-router-dom'
 
 import allReducers from './reducers';
 
 import App from './components/App/App';
 import NotFound from './components/App/NotFound';
+import Home from './components/Home/';
+
 
 import './styles/styles.scss';
 
@@ -31,8 +33,9 @@ render((
     <Router>
       <App>
         <Switch>
-          <Route exact path="/" component={NotFound}/>
+          <Route exact path="/" component={Home}/>
           {/* <Route component={NotFound}/> */}
+          <Route path="*" component={NotFound} />
         </Switch>
       </App>
     </Router>

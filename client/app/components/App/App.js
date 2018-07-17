@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import React, { Component, Fragment } from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import Home from "../Home"
+import Button from "@material-ui/core/Button";
+import { renderComponent } from "recompose";
 
 const App = ({ children }) => (
   <div>
@@ -14,3 +16,6 @@ const App = ({ children }) => (
 );
 
 export default App;
+
+
+
