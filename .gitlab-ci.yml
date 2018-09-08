@@ -1,6 +1,0 @@
-image: node
-
-all_tests:
-  script:
-   - npm install
-   - npm test
